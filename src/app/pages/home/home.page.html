@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-button>
+    <ion-title>home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-list>
+  <ion-item>
+    <ion-avatar>
+       <img src="assets/man-on-the-mountain-edge-avatar.png">
+    </ion-avatar>&nbsp;&nbsp;
+    <ion-label>
+      <h1>Paulo Alves</h1>
+      <p>Gathered:<span class="money">$15000</span></p>
+    </ion-label>
+  </ion-item>
+</ion-list>
+
+<!--  Second Section-->
+  <ion-card>
+    <ion-card-header>
+
+      <ion-card-subtitle>Last Pickup Call</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+    <ion-item lines="none">
+      <ion-icon name="hourglass-outline" slot="start"  color="warning"></ion-icon>
+      <ion-label>On hold</ion-label>
+      <p>1/6/2023 6:28AM</p>
+    </ion-item>
+
+      <ion-item lines="none">
+        <ion-label>
+          <p>Created at 1/6/2023</p>
+          <p>Notes:Here is some content</p>
+        </ion-label>
+      </ion-item>
+      <ion-button expand="full" color="success" fill="clear">SEE ALL..</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+<!--  Icon Button -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="grey">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
