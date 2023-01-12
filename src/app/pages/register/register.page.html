@@ -1,5 +1,10 @@
 <ion-header>
   <ion-toolbar>
+<!--    For Adding back button-->
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" (click)="backButton()" ></ion-back-button>
+    </ion-buttons>
+
     <ion-title>Register</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -80,5 +85,5 @@
       </ion-item>
     </ion-card-content>
   </ion-card>
-  <ion-button size="full" color="light">Register</ion-button>
+  <ion-button size="full" color="light" (click)="Register()">Register</ion-button>
 </ion-content>

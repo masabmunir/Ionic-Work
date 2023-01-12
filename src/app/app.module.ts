@@ -3,13 +3,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import {AppStoreModule} from "../store/appStoreModule";
+import {StoreDevtoolsModule} from "@ngrx/store-devtools";
+import {LoadingComponent} from "./components/loading/loading.component";
 
 @NgModule({
-  declarations: [AppComponent],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  declarations: [AppComponent,
+                 LoadingComponent
+  ],
+  imports: [BrowserModule,
+    ReactiveFormsModule,
+    IonicModule.forRoot(),
+    AppRoutingModule,
+    AppStoreModule,
+    StoreDevtoolsModule.instrument({maxAge:25})
+  ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })

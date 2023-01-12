@@ -12,4 +12,6 @@ export class PickupCallsPage implements OnInit {
   ngOnInit() {
   }
 
+  hastrophy:boolean=false;
+
 }
