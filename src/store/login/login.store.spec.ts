@@ -21,3 +21,13 @@ describe("login store",()=>{
   })
   })
 })
+
+
+
+// let marcos = [
+//   {LOL:"Laugh Out Loud"},
+//   {IMO: "In My Opinion"},
+//   {IDK: "I Don’t Know"},
+//   {LMAO: "Laugh My Ass Off"},
+//   {IDC: "I Don't Care"}
+// ]
